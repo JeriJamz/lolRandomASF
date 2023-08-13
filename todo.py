@@ -11,19 +11,21 @@ def sprint(z): #the slow print
 #make a list that will hold 1 - 64
 def TodoList():#idk kno if this is vaild yet
     newItem = input()
-    x = input()
+    nput = input()
     tDlist = list(range(str(int(x,64))))#this gone give me hell
     for x in range(tDlist(newItem)):
         x + 1
-    nput = input()
     
 sprint('return 0\n')
-
 tr = True
-"<Exit>" == False
+"Exit" == False
 nput = input()
 
-while nput != "<Exit>":
-    TodoList()
+if nput.lower() == "yes":
+    while tr:
+        print("Todo Listing")
+        nput = input()
+        print(f'{nput}')
+        
     
 
