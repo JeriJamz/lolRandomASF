@@ -14,11 +14,10 @@ def TodoList():#idk kno if this is vaild yet
     x = input()
     tDlist = list(range(str(int(x,64))))#this gone give me hell
     for x in range(tDlist(newItem)):
-        pass
+        x + 1
     nput = input()
     
-
-sprint('return 0')
+sprint('return 0\n')
 
 tr = True
 "<Exit>" == False
