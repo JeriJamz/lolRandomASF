@@ -9,6 +9,13 @@ def sprint(z): #the slow print
         sys.stdout.flush()
         time.sleep(.05)
 
+def Kfprint(a):
+    for b in a:
+        sys.stdout.write(b)
+        sys.stdout.flush()
+        time.sleep(.099)
+
+
 #make a list that will hold 1 - 64
 
 class ToDo:
@@ -38,18 +45,23 @@ class ToDo:
     def Commands():
         pass
     
-sprint('return 0\n')
+Kfprint("Do you want to access the to do list?\n")
+
 tr = True
 
 nput = input()
 
-while nput.lower() == "yes":
+if nput.lower() == "yes":
     while tr:
         print("Todo Listing")
         nput = input()
         print(f'{nput}')
         if nput == '<Exit>':#well now I know how to add input for the features
+            sprint("End of loop\n")
             tr = False
-        
+        elif nput.lower() == 'Show Todo':
+            print(nput)
+else:
+    sprint("have a good \n")
     
 
