@@ -45,10 +45,11 @@ nput = input()
 
 while nput.lower() == "yes":
     while tr:
-        f'<Exit>' == sys.exit  
         print("Todo Listing")
         nput = input()
         print(f'{nput}')
+        if nput == '<Exit>':#well now I know how to add input for the features
+            tr = False
         
     
 
