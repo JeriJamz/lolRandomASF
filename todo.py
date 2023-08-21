@@ -27,11 +27,17 @@ class ToDo:
         self.Commands
 
     def TodoList():#idk kno if this is vaild yet
-        newItem = input()#working on a print and idk if this takes the strings or just the numbers yet
-        nput = input()#dont think i need this
-        tDlist = list(range(str(int(x,64))))#this gone give me hell
-        for x in range(tDlist(newItem)):#this is the algo to store the item for the day. Max is 64 for the day
-            x + 1
+        Week1ToDoList = {}#Freakin dictionaries 
+        Week2ToDoList = {}
+        FortNiteToDoList = {}
+        Week3ToDoList = {}
+        Week4ToDoList = {}
+        MonthToDoList = {}
+        Week5ToDoList = {}#Smoke Break. Went to smoke a Cig will B back
+        Week6ToDoList = {}
+        Week7ToDoList = {}
+        Week8ToDoList = {}
+        MonthToMonthToDoList = {}
 
     def Click():#from here down are "features ima add"
         pass
@@ -47,21 +53,5 @@ class ToDo:
     
 Kfprint("Do you want to access the to do list?\n")
 
-tr = True
-
-nput = input()
-
-if nput.lower() == "yes":
-    while tr:
-        print("Todo Listing")
-        nput = input()
-        print(f'{nput}')
-        if nput == '<Exit>':#well now I know how to add input for the features
-            sprint("End of loop\n")
-            tr = False
-        elif nput.lower() == 'Show Todo':
-            print(nput)
-else:
-    sprint("have a good \n")
     
 
