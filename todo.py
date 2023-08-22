@@ -27,18 +27,21 @@ class ToDo:
         self.Commands
 
     def TodoList():#idk kno if this is vaild yet
-        Week1ToDoList = {}#Freakin dictionaries 
-        Week2ToDoList = {}
-        FortNiteToDoList = {}
-        Week3ToDoList = {}
-        Week4ToDoList = {}
-        MonthToDoList = {}
-        Week5ToDoList = {}#Smoke Break. Went to smoke a Cig will B back
-        Week6ToDoList = {}
-        Week7ToDoList = {}
-        Week8ToDoList = {}
-        MonthToMonthToDoList = {}
+        Week1ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}#Freakin dictionaries 
+        Week2ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        FortNiteToDoList = {}#try and call week1 and 2 right here.
+        Week3ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        Week4ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        MonthToDoList = {}# try and call all 4 weeks right here
+        Week5ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        Week6ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        Week7ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        Week8ToDoList = {"Monday":"","Tuesday":"","Wendsday":"","Thursday":"","Friday":"","Saturday":"","Sunday":""}
+        Month2ToDoList = {} #try and call week 5-8 right here
+        MonthToMonthToDoList = {} #call boths months right here
 
+# I need Lizzy(My actually computer)
+    
     def Click():#from here down are "features ima add"
         pass
 
