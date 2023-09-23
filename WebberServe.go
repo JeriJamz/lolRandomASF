@@ -28,6 +28,9 @@ func main(){
 	    continue
 
 	}
+    sum := "I need some for the connection"
+    conn.Write([]byte(sum))
+    conn.Close()
 
     }    
 
