@@ -2,7 +2,7 @@ nav{
 
 	posistion: fixed, top;
 	border-color: black;
-	margin: 5-px;
+	margin: 5px;
 	background: #9074d7;
   
 }
@@ -16,6 +16,7 @@ nav: hover{
 .menu{
 
 	relative: bottom;
+	padding: 10px;
 	
 }
 
@@ -23,6 +24,8 @@ a{
 
 	border-color: #edfeff;
 	border: "Times New Roman", Times, Serif;
+	display: inline-block;
+	margin: 5px; 
 	
 }
 
