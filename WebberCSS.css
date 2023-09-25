@@ -3,12 +3,18 @@ nav{
 	posistion: fixed, top;
 	border-color: black;
 	margin: 5-px;
-	background: 
+	background: #9074d7
   
+}
+
+nav: hover{
+
+	background: #ffeaaa
+	
 }
 
 .menu{
 
-
+	relative: bottom
 	
 }
