@@ -3,18 +3,26 @@ nav{
 	posistion: fixed, top;
 	border-color: black;
 	margin: 5-px;
-	background: #9074d7
+	background: #9074d7;
   
 }
 
 nav: hover{
 
-	background: #ffeaaa
+	background: #ffeaaa;
 	
 }
 
 .menu{
 
-	relative: bottom
+	relative: bottom;
 	
 }
+
+a{
+
+	border-color: #edfeff;
+	border: "Times New Roman", Times, Serif;
+	
+}
+
