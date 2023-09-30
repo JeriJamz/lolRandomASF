@@ -2,6 +2,7 @@ import("fmt"
        "os"
        "net/http"
        "net"
+       "strings"
 )
 
 package main
@@ -75,7 +76,12 @@ func main(){
 func login(){
 
     fmt.Println("Welcome to the site\nEnter your UserName and Login")
+    scanln(k)//working on communication btw html and server
+    if k == strings.ToLower("Yes"){
 
+	goto NewUserLogin
+
+    }
 }
 
 func operator(){
@@ -86,8 +92,39 @@ func operator(){
     listener, err := net.ListenTCP("tcp", tcpAddr)
     http.HandleFunc("/")
     log.Fatal(htttp.ListenAndServe("SweatSite/Login:53",nil))
+    goto Kyrie
 
+}
 
+func Kyrie(w http.ResponseWriter, r *http.Request){
+
+    fmt.printLn("Ok")
+
+}
+
+func NewUserLogin(){
+
+    NewUser := Usr{UsrName:UserName{usrName:"",Email:""},
+		   {Password:Password{Password:""}}}
+
+    WriteNewUsrLogin(fileName, key interface){
+
+        fmt.Println("Hello New User. Please Type in your User Name")
+    
+        outFile, err := os.Write("Login.txt")
+        checkError(err)
+        encoder := gob.NewEncoder(outFile)
+        err = encoder.Encode(key)
+        checkError(err)
+        fmt.Println("Please Enter Your UserName:")
+	newUsrName := scanln()
+	outFile := newUsrName
+	fmt.Println("Please Enter Your Password")
+	newPassword := scanln()
+	outFile := newPassword
+	outFile.Close()
+
+    }
 }
 
 func checkError(err error){
