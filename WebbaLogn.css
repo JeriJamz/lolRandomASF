@@ -1,0 +1,30 @@
+.LoginCard{
+
+    posistion: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #f3e8dc;
+
+}
+
+.LoginCard: hover{
+
+    background-color: #d4fcc1;
+
+}
+
+.LCInner{
+
+    posistion: relative;
+    top: 25%;
+    background-color: #e2fbfa;    
+
+}
+
+container{
+
+    border: 5px;
+    border-color: #000000;
+    padding: 20px;
+}
+
