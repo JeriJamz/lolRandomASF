@@ -1,6 +1,8 @@
 import("fmt"
        "os"
-        )
+       "net/http"
+       "net"
+)
 
 package main
 
@@ -65,12 +67,36 @@ type nuPasswrd struct{
 
 func main(){
 
-	goto login
+    goto operator
+    goto login
 
 }
 
 func login(){
 
-	fmt.Println("Welcome to the site\nEnter your UserName and Login")
+    fmt.Println("Welcome to the site\nEnter your UserName and Login")
+
+}
+
+func operator(){
+
+    service := "53"
+    tcpAddr, err := new.ListenTCP("tcp",service)
+    checkError(err)
+    listener, err := net.ListenTCP("tcp", tcpAddr)
+    http.HandleFunc("/")
+    log.Fatal(htttp.ListenAndServe("SweatSite/Login:53",nil))
+
+
+}
+
+func checkError(err error){
+
+    if err != nil{
+
+	fmt.Fprintf(os.Stderr, "Sum Fatal Error: %s", err.Error())
+	os.Exit(1)
+
+    }
 
 }
