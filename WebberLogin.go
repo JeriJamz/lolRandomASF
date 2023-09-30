@@ -36,12 +36,32 @@ type Email stuct{
 
 type NewUser struct{
 
-    Email Email[]
-    usrName UserName
-    Passwrd PassWord
+    nuEmail nuEmail[]
+    nusrName nuUserName
+    nuPasswrd nuPassWord
 
 }
 
+type nuEmail struct{
+
+    Address string
+
+}
+
+type nusrName struct{
+
+    nuUserName string
+
+}
+
+type nuPasswrd struct{
+
+    nuPassWord string
+
+}
+
+
+/*******LOGIC*******/
 
 func main(){
 
