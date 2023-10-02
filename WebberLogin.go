@@ -1,11 +1,12 @@
+package main
+
 import("fmt"
        "os"
        "net/http"
        "net"
        "strings"
+       "encoding/gob"
 )
-
-package main
 
 /**********************Exsiting User********************/
 
@@ -29,8 +30,8 @@ type PassWrd struct{
 
 }
 
-type Email stuct{
-
+type Email struct{
+    
     Address string
 
 }
@@ -39,7 +40,7 @@ type Email stuct{
 
 type NewUser struct{
 
-    nuEmail nuEmail[]
+    nuEmail []nuEmail
     nusrName nuUserName
     nuPasswrd nuPassWord
 
@@ -68,8 +69,8 @@ type nuPasswrd struct{
 
 func main(){
 
-    goto operator
-    goto login
+    operator()
+    login()
 
 }
 
@@ -79,7 +80,7 @@ func login(){
     scanln(k)//working on communication btw html and server
     if k == strings.ToLower("Yes"){
 
-	goto NewUserLogin
+	NewUserLogin()
 
     }
 }
@@ -92,40 +93,46 @@ func operator(){
     listener, err := net.ListenTCP("tcp", tcpAddr)
     http.HandleFunc("/")
     log.Fatal(htttp.ListenAndServe("SweatSite/Login:53",nil))
-    goto Kyrie
+    Kyrie()
 
 }
 
-func Kyrie(w http.ResponseWriter, r *http.Request){
+func Kyrie(){
 
-    fmt.printLn("Ok")
+    ServeHTTP(w, http.ResponseWriter, r *http.Request)
 
 }
 
 func NewUserLogin(){
 
-    NewUser := Usr{UsrName:UserName{usrName:"",Email:""},
-		   {Password:Password{Password:""}}}
+    NewUser := Usr{nusrName:nuUserName{usrName:"",nuEmail:""},
+		   {nuPasswrd:nuPassWord{Password:""}}}
+    
+    WriteNewUsrLogin()
 
-    WriteNewUsrLogin(fileName, key interface){
+    func WriteNewUsrLogin(fileName string, key interface{}){
 
         fmt.Println("Hello New User. Please Type in your User Name")
-    
         outFile, err := os.Write("Login.txt")
         checkError(err)
         encoder := gob.NewEncoder(outFile)
         err = encoder.Encode(key)
         checkError(err)
         fmt.Println("Please Enter Your UserName:")
-	newUsrName := scanln()
-	outFile := newUsrName
-	fmt.Println("Please Enter Your Password")
-	newPassword := scanln()
-	outFile := newPassword
-	outFile.Close()
+        newUsrName := scanln()
+        outFile := newUsrName
+        fmt.Println("Please Enter Your Password")
+        newPassword := scanln()
+        outFile := newPassword
+        outFile.Close()
 
     }
+
+
+    WriteNewUsrLogin("NewUser.gob",NewUser)
+
 }
+
 
 func checkError(err error){
 
