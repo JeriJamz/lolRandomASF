@@ -108,9 +108,9 @@ func NewUserLogin(){
     NewUser := Usr{nusrName:nuUserName{usrName:"",nuEmail:""},
 		   {nuPasswrd:nuPassWord{Password:""}}}
     
-    WriteNewUsrLogin()
+    WriteNewUsrLogin()//this wont csll right
 
-    func WriteNewUsrLogin(fileName string, key interface{}){
+    func WriteNewUsrLogin(fileName string, key interface{}){//APIs are stupid not making one for a server/ Were Parsing INFO BOYS
 
         fmt.Println("Hello New User. Please Type in your User Name")
         outFile, err := os.Write("Login.txt")
