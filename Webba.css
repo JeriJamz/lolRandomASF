@@ -48,6 +48,7 @@ a{
 
 .NavMenu{
 
+	position: move down;
 	animation: forwards;
 	animation-duration: 1s;
 	display:inline-flexbox;
