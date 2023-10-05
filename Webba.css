@@ -36,4 +36,22 @@ a{
 	padding: 15px;
 	display: inline-block;
 	position: relative, float, top;	
+
+}
+
+.NavMenuHeader{
+
+	color:#8cd8d9;
+	border-color:black;
+
+}
+
+.NavMenu{
+
+	animation: forwards;
+	animation-duration: 1s;
+	display:inline-flexbox;
+	background-color: #fc7d7f;
+	border-color:black;	
+
 }
