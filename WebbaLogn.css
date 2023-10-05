@@ -1,13 +1,13 @@
 .LoginCard{
 
-    posistion: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     background-color: #f3e8dc;
 
 }
 
-.LoginCard: hover{
+.LoginCard:hover{
 
     background-color: #d4fcc1;
 
@@ -15,7 +15,7 @@
 
 .LCInner{
 
-    posistion: relative;
+    position: relative;
     top: 25%;
     background-color: #e2fbfa;    
 
@@ -35,15 +35,3 @@ container{
 
 }
 
-.UsrName{
-
-
-    
-}
-
-.PassWrd{
-
-	border:5px;
-	border-color:5px;
-    
-}

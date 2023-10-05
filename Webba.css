@@ -1,13 +1,13 @@
 nav{
 
-	posistion: fixed, top;
+	position: fixed, top;
 	border-color: black;
 	margin: 5px;
 	background: #9074d7;
   
 }
 
-nav: hover{
+nav:hover{
 
 	background: #ffeaaa;
 	
@@ -15,7 +15,7 @@ nav: hover{
 
 .menu{
 
-	relative: bottom;
+	position: relative, bottom;
 	padding: 10px;
 	
 }
@@ -35,5 +35,5 @@ a{
 	font-family: "Courier New", monospace;
 	padding: 15px;
 	display: inline-block;
-	posiition: float, top;	
+	position: relative, float, top;	
 }
